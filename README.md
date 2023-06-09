@@ -75,6 +75,7 @@ appsettings.json
 * Further Exploration 2 - `Pagination` is also enabled for this API. This feature makes it possible to streamline accessing a database which may have thousands of records, with Pagination, we can return only a selection of the results.
 * Endpoint examples for Page Number and Page Size are given in the table below to test this feature, where: the `pageNumber` parameter will specify how many pages will return, the `pageSize` parameter will specify how many animal results per page are displayed.
 * NOTE - `Pagination` is **ONLY** enabled for API v2! We are making this feature change available to companies who can update their API to v2.
+* `Randomization` of results has been implented as well. A URL example is included in the table below. 
 
 ```
 Endpoints:
