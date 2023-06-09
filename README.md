@@ -92,6 +92,7 @@ DELETE /api/v2/animals/{id}
 ### Example for a POST request: POST https://localhost:5001/api/v2/animals
 
   * When using POST (create), a body with populated fields is required:
+  * Note: when using POST in Swagger, be sure to remove the `"animalId": ,"` field, as it is automatically added at the top of the body. In POSTMAN, simply copy/paste the below example with your own paramaters to add an animal to the database:
       ```
       { 
         "name": "Whiskers",
