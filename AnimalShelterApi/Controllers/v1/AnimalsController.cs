@@ -39,7 +39,7 @@ namespace AnimalShelterApi.Controllers.v1
 
       if (age > 0)
       {
-        query = query.Where(entry => entry.Age >= age);
+        query = query.Where(entry => entry.Age == age);
       }
 
       if (random)
