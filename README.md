@@ -7,13 +7,13 @@
 Independent Code Review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality, also implementing Further Exploration objectives such as API Versioning, Pagination.
 This API allows the user to Get, Create, Update and Delete availabe listings.
 
-## MVC CLIENT Front End for this API is available to use:
-
 [API Usage](#using-this-api)
 
 [API Query Table](#example-urls-for-a-get-request-on-animals)
 
 [Example JSON Snippets](#example-for-a-post-request-post-httpslocalhost5001apiv2animals)
+
+[MVC Client Front End Usage & Instructions](#mcv-client-front-end-setupinstallation-requirements)
 
 ## Technologies Used
 
@@ -141,6 +141,9 @@ https://localhost:5001/api/v2/animals?pagenumber=1&pagesize=3&species=dog
 ```
 DELETE https://localhost:5001/api/v2/animals/{ID}
 ```
+
+## MCV Client Front End Setup/Installation Requirements
+
 
 [Back to Top](#animal-shelter)
 
