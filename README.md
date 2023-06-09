@@ -9,7 +9,7 @@ This API allows the user to Get, Create, Update and Delete availabe listings.
 
 [API Usage](#using-this-api)
 
-[API Query Table](#example-urls-for-a-get-request-on-animals-these-urls-have-v2-as-the-api-version-simply-change-this-to-v1-to-use-versioning)
+[API Query Table](#example-urls-for-a-get-request-on-animals)
 
 [Example JSON Snippets](#example-for-a-post-request-post-httpslocalhost5001apiv2animals)
 
@@ -97,11 +97,18 @@ DELETE /api/v2/animals/{id}
 | Breed      | String | not required | Returns animals with a matching breed value  | https://localhost:5001/api/v2/animals?breed=siamese |
 | Age        | Int    | not required | Returns animals with a matching age value | https://localhost:5001/api/v2/animals?age=5 |
 | Random     | boolean| not required | Returns a random animal, Default is False       | https://localhost:5001/api/v2/animals?random=true |
-| Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pagenumber=1&pageSize=5 |
+| Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pagenumber=1&pagesize=5 |
 
-### Example to query for specific species of a certain age:
+### Example combination queries:
 ```
+GET Animal by Id: 
+https://localhost:5001/api/v2/animals/14
+
+GET Animals by Species & Age: 
 https://localhost:5001/api/v2/animals?species=cat&age=5
+
+GET Animals using Pagination & only Dogs: 
+https://localhost:5001/api/v2/animals?pagenumber=1&pagesize=3&species=dog
 ```
 
 ### Example for a POST request: POST https://localhost:5001/api/v2/animals
