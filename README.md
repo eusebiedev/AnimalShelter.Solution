@@ -8,7 +8,10 @@ Independent Code Review project: Build an API for a local animal shelter to list
 This API allows the user to Get, Create, Update and Delete availabe listings.
 
 [API Usage](#using-this-api)
+
 [API Query Table](#example-urls-for-a-get-request-on-animals-these-urls-have-v2-as-the-api-version-simply-change-this-to-v1-to-use-versioning)
+
+[Example JSON Snippets](#example-for-a-post-request-post-httpslocalhost5001apiv2animals)
 
 ## Technologies Used
 
