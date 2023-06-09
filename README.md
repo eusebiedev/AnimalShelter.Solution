@@ -121,7 +121,10 @@ DELETE /api/v2/animals/{id}
         "age": 11 
       }
       ```
-### To simply DELETE an entry, include the ID at the end of the url: DELETE https://localhost:5001/api/v2/animals/{ID}
+### To simply DELETE an entry, include the ID at the end of the url: 
+```
+DELETE https://localhost:5001/api/v2/animals/{ID}
+```
 
 [Back to Top](#animal-shelter)
 
