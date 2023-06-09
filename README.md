@@ -74,7 +74,7 @@ appsettings.json
 
 * Further Exploration 2 - `Pagination` is also enabled for this API. This feature makes it possible to streamline accessing a database which may have thousands of records, with Pagination, we can return only a selection of the results.
 * Endpoint examples for Page Number and Page Size are given in the table below to test this feature, where: the `pageNumber` parameter will specify how many pages will return, the `pageSize` parameter will specify how many animal results per page are displayed.
-* NOTE - `Pagination` is **ONLY** enabled for API v2! We are making this feature change only available to companies who can update their API to v2.
+* NOTE - `Pagination` is **ONLY** enabled for API v2! We are making this feature change available to companies who can update their API to v2.
 
 ```
 Endpoints:
@@ -84,7 +84,8 @@ POST /api/v2/animals/
 PUT /api/v2/animals/{id}
 DELETE /api/v2/animals/{id}
 ```
-## Example URLs for a GET Request on **Animals**: (these URLs have `v2` as the API version, simply change this to `v1` to use Versioning) 
+## Example URLs for a GET Request on **Animals**: 
+### (these URLs have `v2` as the API version, simply change this to `v1` if your company requires it) 
 
 | Parameter  | Type   | Required     | Description                                      | Sample Url  |
 |----------- |-----   | ---------    | -------------                                    | ----------  |
@@ -92,7 +93,7 @@ DELETE /api/v2/animals/{id}
 | Name       | String | not required | Returns animals with a matching name value       | https://localhost:5001/api/v2/animals?name={ANIMALNAME} |
 | ID         | Int    | required     | Returns animals with a matching ID               | https://localhost:5001/api/v2/animals/{ID} |
 | Species    | String | not required | Returns animals with a matching species value    | https://localhost:5001/api/v2/animals?species={SPECIES} |
-| Breed      | String | not required | Returns animals with a matching climate value  | https://localhost:5001/api/v2/animals?breed={BREED} |
+| Breed      | String | not required | Returns animals with a matching breed value  | https://localhost:5001/api/v2/animals?breed={BREED} |
 | Age        | Int    | not required | Returns animals with a matching age value | https://localhost:5001/api/v2/animals?age={NUMBER} |
 | Random     | boolean| not required | Returns a random animal, Default is False       | https://localhost:5001/api/v2/animals?random={TRUE} |
 | Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pageNumber={PAGENUMBER}&pageSize={PAGESIZE} |
