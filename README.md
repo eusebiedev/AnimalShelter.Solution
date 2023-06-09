@@ -62,12 +62,12 @@ appsettings.json
 
 ## Using This API
 
-* `API Versioning` is enabled, which defaults to API v2 when Swagger opens. Simply use the Swagger `Select a definition` drop down options list to select API v1
+* Further Exploration 1 - `API Versioning` is enabled, which defaults to API v2 when Swagger opens. Simply use the Swagger `Select a definition` drop down options list to select API v1.
 * To access API v1 in Postman: `https://localhost:5001/api/v1/animals/` 
 * To access API v2 in Postman: `https://localhost:5001/api/v2/animals/`
 
-* `Pagination` is also enabled for this API. Endpoint examples for Page Number and Page Size are given in the table below to test this feature. A note on Pagination: the `pageNumber` parameter will specify how many pages will return, the `pageSize` parameter will specify how many results per page are displayed.
-
+* Further Exploration 2 - `Pagination` is also enabled for this API. Endpoint examples for Page Number and Page Size are given in the table below to test this feature, where: the `pageNumber` parameter will specify how many pages will return, the `pageSize` parameter will specify how many animal results per page are displayed.
+* NOTE - `Pagination` is **ONLY** enabled for API v2!
 ```
 Endpoints:
 GET /api/v2/animals/
