@@ -123,6 +123,8 @@ DELETE /api/v2/animals/{id}
       ```
 ### To simply DELETE an entry, include the ID at the end of the url: DELETE https://localhost:5001/api/v2/animals/{ID}
 
+[Back to Top](#animal-shelter)
+
 ## Known Bugs
 
 No known bugs as of 6/9/23
