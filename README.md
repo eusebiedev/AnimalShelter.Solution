@@ -4,8 +4,7 @@
 
 ## Description
 
-Independent Code Review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality, also implementing Further Exploration objectives such as API Versioning, Pagination.
-This API allows the user to Get, Create, Update and Delete availabe listings.
+Independent Code Review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality, also implementing Further Exploration objectives such as API Versioning, Pagination. This API allows the user to Get, Create, Update and Delete availabe listings.
 
 [API Usage](#using-this-api)
 
@@ -29,6 +28,7 @@ This API allows the user to Get, Create, Update and Delete availabe listings.
 * MySQL
 * API Versioning
 * API Pagination
+* MVC API Client Front End
 
 ## Setup/Installation Requirements
 
@@ -144,8 +144,17 @@ DELETE https://localhost:5001/api/v2/animals/{ID}
 
 ## MCV Client Front End Setup/Installation Requirements
 
-Work In Progress!
+To use the MVC Client front end website, you must run both AnimalShelterApi & AnimalShelterClient together:
 
+1. After following the above instructions for cloning and opening this AnimalShelterApi
+2. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
+3. Clone the client repository to any other directory using $ `git clone https://github.com/eusebiedev/AnimalShelterClient.Solution.git`
+4. Open both projects separately in your IDE of choice
+5. Navigate to the **API** project directory with $ `cd AnimalShelterApi`
+5. First start the API with `dotnet run`
+6. Navigate to the **CLIENT** project directory with $ `cd AnimalShelterClient`
+7. Now start the Client Front End with `dotnet watch run`
+8. Interact with the Animal database, viewing, editing, deleting and creating animals
 
 [Back to Top](#animal-shelter)
 
