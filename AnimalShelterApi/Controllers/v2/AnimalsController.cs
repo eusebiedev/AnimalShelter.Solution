@@ -18,7 +18,7 @@ namespace AnimalShelterApi.Controllers.v2
     }
 
     [HttpGet]
-    public async Task<List<Animal>> Get(int pageNumber, int pageSize, string name, string species, string breed,  int age, bool random = false)
+    public async Task<List<Animal>> Get(int pageNumber, int pageSize, string name, string species, string breed, int age, bool random = false)
     {
       IQueryable<Animal> query = _db.Animals
                                   .AsQueryable();
