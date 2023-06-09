@@ -84,10 +84,10 @@ DELETE /api/v2/animals/{id}
 | Name       | String | not required | Returns animals with a matching name value       | https://localhost:5001/api/v2/animals?name={ANIMALNAME} |
 | ID         | Int    | required     | Returns animals with a matching ID               | https://localhost:5001/api/v2/animals/{ID} |
 | Species    | String | not required | Returns animals with a matching species value    | https://localhost:5001/api/v2/animals?species={SPECIES} |
-| Breed      | String | not required | Returns countries with a matching climate value  | https://localhost:5001/api/v2/animals?breed={BREED} |
-| Age        | Int    | not required | Returns countries with a matching population value | https://localhost:5001/api/v2/animals?age={NUMBER} |
-| Random     | boolean| not required | Returns a random Country, Default is False       | https://localhost:5001/api/v2/animals?random={TRUE} |
-| Page Number + Page Size | int, int | not required | Returns countries with user selected page number & page size | https://localhost:5001/api/v2/animals?pageNumber={PAGENUMBER}&pageSize={PAGESIZE} |
+| Breed      | String | not required | Returns animals with a matching climate value  | https://localhost:5001/api/v2/animals?breed={BREED} |
+| Age        | Int    | not required | Returns animals with a matching age value | https://localhost:5001/api/v2/animals?age={NUMBER} |
+| Random     | boolean| not required | Returns a random animal, Default is False       | https://localhost:5001/api/v2/animals?random={TRUE} |
+| Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pageNumber={PAGENUMBER}&pageSize={PAGESIZE} |
 
 ### Example for a POST request: POST https://localhost:5001/api/v2/animals
 
