@@ -91,13 +91,18 @@ DELETE /api/v2/animals/{id}
 | Parameter  | Type   | Required     | Description                                      | Sample Url  |
 |----------- |-----   | ---------    | -------------                                    | ----------  |
 | Animals    | List   | not required | Returns a list of all animals in database        | https://localhost:5001/api/v2/animals |
-| Name       | String | not required | Returns animals with a matching name value       | https://localhost:5001/api/v2/animals?name={ANIMALNAME} |
-| ID         | Int    | required     | Returns animals with a matching ID               | https://localhost:5001/api/v2/animals/{ID} |
-| Species    | String | not required | Returns animals with a matching species value    | https://localhost:5001/api/v2/animals?species={SPECIES} |
-| Breed      | String | not required | Returns animals with a matching breed value  | https://localhost:5001/api/v2/animals?breed={BREED} |
-| Age        | Int    | not required | Returns animals with a matching age value | https://localhost:5001/api/v2/animals?age={NUMBER} |
-| Random     | boolean| not required | Returns a random animal, Default is False       | https://localhost:5001/api/v2/animals?random={TRUE} |
-| Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pageNumber={PAGENUMBER}&pageSize={PAGESIZE} |
+| Name       | String | not required | Returns animals with a matching name value       | https://localhost:5001/api/v2/animals?name=peter |
+| ID         | Int    | required     | Returns animals with a matching ID               | https://localhost:5001/api/v2/animals/1 |
+| Species    | String | not required | Returns animals with a matching species value    | https://localhost:5001/api/v2/animals?species=cat |
+| Breed      | String | not required | Returns animals with a matching breed value  | https://localhost:5001/api/v2/animals?breed=siamese |
+| Age        | Int    | not required | Returns animals with a matching age value | https://localhost:5001/api/v2/animals?age=5 |
+| Random     | boolean| not required | Returns a random animal, Default is False       | https://localhost:5001/api/v2/animals?random=true |
+| Page Number + Page Size | int, int | not required | Returns an animals list with user selected page number & page size | https://localhost:5001/api/v2/animals?pagenumber=1&pageSize=5 |
+
+### Example to query for specific species of a certain age:
+```
+https://localhost:5001/api/v2/animals?species=cat&age=5
+```
 
 ### Example for a POST request: POST https://localhost:5001/api/v2/animals
 
