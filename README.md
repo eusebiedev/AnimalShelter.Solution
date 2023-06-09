@@ -5,7 +5,10 @@
 ## Description
 
 Independent Code Review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality, also implementing Further Exploration objectives such as API Versioning, Pagination.
-This API allows the user to Get, Create, Update and Delete availabe listings. . 
+This API allows the user to Get, Create, Update and Delete availabe listings.
+
+[API Usage](#using-this-api)
+[API Query Table](#example-urls-for-a-get-request-on-animals-these-urls-have-v2-as-the-api-version-simply-change-this-to-v1-to-use-versioning)
 
 ## Technologies Used
 
