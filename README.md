@@ -144,11 +144,12 @@ DELETE https://localhost:5001/api/v2/animals/{ID}
 
 ## MCV Client Front End Setup/Installation Requirements
 
-To use the MVC Client front end website, you must run both AnimalShelterApi & AnimalShelterClient together:
+To use the MVC Client front end website, you must run both AnimalShelterApi & AnimalShelterClient together. To view the Client Repo clink here:
+https://github.com/eusebiedev/AnimalShelterClient.Solution
 
 1. After following the above instructions for cloning and opening this AnimalShelterApi
 2. Open your shell of choice (e.g., Terminal or GitBash) and run these commands in order:
-3. Clone the client repository to any other directory using $ `git clone https://github.com/eusebiedev/AnimalShelterClient.Solution.git`
+3. Clone the **Client** repository to any other directory using $ `git clone https://github.com/eusebiedev/AnimalShelterClient.Solution.git`
 4. Open both projects separately in your IDE of choice
 5. Navigate to the **API** project directory with $ `cd AnimalShelterApi`
 5. First start the API with `dotnet run`
